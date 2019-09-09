@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CsvHelper" Version="12.1.2" />
+    <PackageReference Include="SQLitePCLRaw.bundle_green" Version="2.0.1" />
+    <PackageReference Include="SQLitePCLRaw.ugly" Version="2.0.1" />
+    <PackageReference Include="System.CommandLine.DragonFruit" Version="0.3.0-alpha.19405.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="tnt\dump_release_tntvillage_2019-08-30.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="tnt\README.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

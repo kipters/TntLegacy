@@ -1,1 +1,5 @@
 .vs/
+bin/
+obj/
+tnt.sqlite
+DatabaseBuilder/tnt/
